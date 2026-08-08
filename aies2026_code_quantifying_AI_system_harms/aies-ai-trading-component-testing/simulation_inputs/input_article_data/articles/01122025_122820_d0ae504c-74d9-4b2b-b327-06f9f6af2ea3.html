@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equities Rally Extends to Record Highs as Tech, Industrials and Financials Power Broad-Based Upswing | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">01/12/2025 09:15:00 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Equities Rally Extends to Record Highs as Tech, Industrials and Financials Power Broad-Based Upswing</h1>
+                <p class="article-meta__standfirst">Global equity markets pushed higher, with major benchmarks closing at fresh records after a wave of upbeat earnings, dovish central bank signals and renewed investor demand for cyclicals and growth. Strong breadth, sustained ETF inflows and rising buyback activity underpin a bullish case for equities even as valuations tick higher.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Harper Lin, Senior Markets Correspondent</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">01/12/2025 09:15:00</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">U.S. equities extended a month-long advance on Monday, with the S&P 500 rising 1.6% to finish at 5,010, the Nasdaq 100 climbing 2.4% to 17,950 and the Dow Jones Industrial Average up 1.2% to 39,850 — all closing at fresh intraday and record levels. Trading breadth was strong: advancing issues outnumbered decliners by better than 4-to-1 on the NYSE, while the number of new 52-week highs exceeded 1,100, signaling broad participation beyond headline tech names.</p>
+    <p>Sector rotation accompanied the rally. Semiconductors and software led gains — the SOX-equivalent semiconductor index jumped 3.8% — while industrials and financials climbed 2.7% and 2.1% respectively as investors re-priced cyclical recovery prospects. Defensive sectors lagged; utilities fell 0.4% as risk-on flows favored growth and cyclicals. IMPLIED volatility collapsed, with the VIX sliding 14% to 11.8, reflecting reduced option-costs for market exposure.</p>
+    <p>Market drivers were clear: an above-consensus earnings season, softening core inflation prints in recent weeks and a more dovish tilt in central bank communications. Notable corporate beats included AetherCloud, whose fiscal Q4 revenue beat by 12% and whose cloud bookings growth accelerated to 42% year-over-year; Riverton Steel warned last quarter but reported better-than-expected margin recovery on stronger downstream demand; and Atlas Bank cited improving net interest margins and upgraded its capital return plan. Institutional flows reinforced the move — equity ETFs recorded an estimated $18.2 billion net inflow across global funds last week — while corporate buyback announcements accelerated, totaling roughly $92 billion in commitments for the quarter.</p>
+    <p>Analysts responded by lifting forward estimates and price targets. At Meridian Capital Markets, analysts raised S&P 500 12-month EPS projections by 2.4% following the latest results and contemporaneous macro data, nudging the 12-month forward P/E to 18.4 from 17.9 a month earlier. Technical indicators corroborated fundamentals: the market’s advance-decline line remained firmly positive and short interest across large-cap growth names declined, indicating unwinding bearish positioning. Strategists highlight improving revenue momentum, margin expansion in select sectors and accelerating buybacks as supportive structurally bullish signals.</p>
+    <p>Despite the constructive backdrop, strategists caution on near-term risk. Tail risks include an unexpected inflation rebound, geopolitical flare-ups that could disrupt supply chains, or a sharper-than-expected rotation that leaves stretched growth names exposed. For now, the recommended positioning is overweight quality cyclicals, selective growth with durable cashflow conversion and a defensive overlay via low-cost options or diversified bond ladders to manage potential volatility spikes.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>Major benchmarks closed at record highs: S&P 500 +1.6% to 5,010; Nasdaq 100 +2.4% to 17,950; Dow +1.2% to 39,850 — breadth led by semiconductors and industrials.</li>
+                        <li>Net inflows into equity ETFs totaled an estimated $18.2 billion last week while corporate buyback announcements surged to roughly $92 billion for the quarter, providing demand support for equities.</li>
+                        <li>Earnings season surprises: AetherCloud beat revenue and bookings estimates and raised guidance; several banks reported expanding net interest margins, prompting analysts to upgrade earnings forecasts and price targets.</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>""The combination of accelerating earnings revisions, persistent buyback activity and continued capital reallocations into cyclicals suggests this is more than a short-term melt-up — it's a sustained regime where risk assets can outperform for the next several quarters, provided inflation remains subdued,""</p>
+                    </blockquote>
+                    <p class="attribution">Maya Rodriguez, Head of U.S. Equity Strategy, Meridian Capital Markets</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

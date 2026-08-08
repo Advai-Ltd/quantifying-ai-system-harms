@@ -1,0 +1,21 @@
+{
+    "repeats_per_combination": 5,
+    "models": [
+        "openai/gpt-5-mini", 
+        "anthropic/claude-sonnet-4-5-20250929",
+        "gemini/gemini-flash-latest"
+    ],
+    "news_providers": ["Financial Times"],
+    "asset_classes": [
+        "Equities",
+        "Corporate Bonds",
+        "Government Bonds",
+        "Mortgages Backed Securities"
+    ],
+    "sentiment": [
+        "bullish",
+        "neutral",
+        "bearish"
+    ]
+}
+

@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "experiment_id": "test_option_d",
+    "scenario_id": "test",
+    "scenario_name": "Test Option D",
+    "hypothesis": "Stochastic topology should create diverse network structures",
+    "description": "Test stochastic network topology generation",
+    "tags": [
+      "test",
+      "option-d"
+    ],
+    "network_mode": "stochastic",
+    "shock_mode": "correlated",
+    "num_simulations": 5,
+    "seed": 42,
+    "fire_sale_intensity": 0.15,
+    "correlation": 0.6,
+    "shock_volatility": 0.03
+  },
+  "summary_statistics": {
+    "num_simulations": 5,
+    "failure_rate": {
+      "mean": 0.2,
+      "std": 0.4000000000000001,
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "percentile_5": 0.0,
+      "percentile_25": 0.0,
+      "percentile_75": 0.0,
+      "percentile_95": 0.7999999999999998
+    },
+    "total_rounds": {
+      "mean": 0.2,
+      "std": 0.4000000000000001,
+      "min": 0,
+      "max": 1,
+      "median": 0.0
+    },
+    "asset_losses": {
+      "mean": 473.77978263749617,
+      "std": 119.58228376199432,
+      "total": 2368.898913187481
+    },
+    "fire_sale_losses": {
+      "mean": 36.70479830436849,
+      "std": 73.40959660873698,
+      "total": 183.52399152184245
+    },
+    "systemic_crisis_probability": 0.2,
+    "contagion_mechanisms": {
+      "initial_failure_rate": 0.14,
+      "contagion_failure_rate": 0.06,
+      "direct_contagion_rate": 0.0,
+      "indirect_contagion_rate": 0.06,
+      "interbank_failure_rate": 0.0,
+      "fire_sale_failure_rate": 0.06,
+      "contagion_probability": 0.2,
+      "direct_contagion_probability": 0.0,
+      "indirect_contagion_probability": 0.2,
+      "initial_failures_total": 7,
+      "interbank_failures_total": 0,
+      "fire_sale_failures_total": 3,
+      "contagion_failures_total": 3,
+      "initial_pct_of_failures": 70.0,
+      "contagion_pct_of_failures": 30.0,
+      "direct_pct_of_failures": 0.0,
+      "indirect_pct_of_failures": 30.0
+    }
+  }
+}

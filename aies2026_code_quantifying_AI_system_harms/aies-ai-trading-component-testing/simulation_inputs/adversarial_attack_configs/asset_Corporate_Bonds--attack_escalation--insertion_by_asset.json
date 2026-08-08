@@ -1,0 +1,6 @@
+{
+    "attack_type": "escalation",
+    "target_asset": "Corporate Bonds",
+    "insertion_logic": "by_asset",
+    "custom_text": null
+}

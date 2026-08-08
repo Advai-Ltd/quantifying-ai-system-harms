@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Equities Tumble as Recession Fears Mount, Tech Sector Leads $2.1 Trillion Wipeout | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">15/01/2025 16:45:23 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Global Equities Tumble as Recession Fears Mount, Tech Sector Leads $2.1 Trillion Wipeout</h1>
+                <p class="article-meta__standfirst">Major stock indices worldwide suffered their steepest losses in over a year as mounting concerns over slowing economic growth, persistent inflation, and weakening corporate earnings guidance triggered a broad-based selloff. The S&P 500 plunged 3.4% while technology shares bore the brunt of the downturn, with the Nasdaq Composite sliding 4.2% as investors fled risk assets amid deteriorating macroeconomic conditions and tightening financial conditions.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Sarah Mitchell and David Chen</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">15/01/2025 16:45:23</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">Global equity markets experienced a dramatic selloff on Wednesday, erasing more than $2.1 trillion in market capitalization as investors confronted a toxic combination of weakening economic data, disappointing corporate earnings previews, and growing concerns that central banks may keep interest rates elevated for longer than previously anticipated. The S&P 500 closed down 3.4% at 4,842 points, marking its worst single-day performance since October 2023, while the Dow Jones Industrial Average shed 487 points, or 1.3%. Technology-heavy indices bore the heaviest losses, with the Nasdaq Composite plummeting 4.2% as high-valuation growth stocks faced renewed pressure from rising bond yields and risk-off sentiment.</p>
+    <p>The selloff extended across all eleven S&P 500 sectors, with technology, consumer discretionary, and communication services leading declines with losses exceeding 4%. Semiconductor stocks were particularly hard hit, with the Philadelphia Semiconductor Index tumbling 5.8% after several major chipmakers issued cautious guidance citing weakening demand from both enterprise and consumer segments. The VIX volatility index, often referred to as Wall Street's fear gauge, spiked 34% to reach 24.7, its highest level since March 2024, signaling heightened investor anxiety and expectations for continued market turbulence.</p>
+    <p>European markets closed sharply lower before the US session, with the STOXX Europe 600 falling 2.8%, while London's FTSE 100 dropped 2.1% and Germany's DAX declined 3.3%. Asian markets had set the negative tone overnight, with Japan's Nikkei 225 sliding 3.7% and Hong Kong's Hang Seng Index plunging 4.9% amid renewed concerns about China's economic recovery and property sector instability. The global rout intensified after manufacturing data from Germany showed a contraction for the tenth consecutive month, while US retail sales figures came in well below consensus estimates, fueling recession fears and prompting analysts to slash earnings forecasts across multiple sectors.</p>
+    <p>Corporate earnings warnings amplified the bearish sentiment, with several bellwether companies issuing profit warnings that significantly missed analyst expectations. Technology giant Veritech Systems slashed its full-year revenue guidance by 15%, citing weakening enterprise spending and delayed infrastructure projects, sending its shares down 18% and dragging sector peers lower. Consumer discretionary names also suffered after retail chain Meridian Stores reported same-store sales declined 7.2% in the most recent quarter, the steepest drop in five years, while luxury goods maker Ashworth & Collins warned that high-income consumer spending patterns were deteriorating faster than anticipated. The string of negative guidance prompted several investment banks to downgrade their S&P 500 year-end targets, with consensus estimates now pointing to potential further downside of 8-12% from current levels.</p>
+    <p>Market strategists expressed growing concern that the equity rally that characterized much of 2024 has run its course, with valuations appearing stretched against a backdrop of slowing earnings growth and tightening credit conditions. The forward price-to-earnings ratio for the S&P 500 currently stands at 19.2x, well above its ten-year average of 16.8x, despite consensus earnings estimates being revised downward by an average of 6.3% over the past three months. Technical indicators have also turned decidedly negative, with the S&P 500 breaking below its 200-day moving average for the first time in fourteen months, a development that historically has preceded extended periods of market weakness. Trading volumes surged to 25% above the thirty-day average, suggesting strong conviction behind the selling pressure.</p>
+    <p>The fixed income markets reflected the flight to safety, with the yield on the benchmark 10-year US Treasury falling 12 basis points to 4.23% as investors sought refuge in government bonds. However, credit spreads widened significantly, with high-yield corporate bond spreads expanding by 48 basis points to 412 basis points over Treasuries, indicating growing concerns about corporate default risk in a slowing economy. Currency markets saw the US dollar strengthen broadly as risk aversion dominated trading, while commodities sold off sharply with crude oil falling 4.2% to $71.30 per barrel and copper declining 3.8%, reflecting dimmed expectations for global industrial demand. Market participants are now closely watching upcoming Federal Reserve communications for any indication of potential policy adjustments, though recent hawkish rhetoric from central bank officials has dampened hopes for near-term rate cuts that might support equity valuations.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>S&P 500 plunges 3.4% while Nasdaq Composite drops 4.2%, erasing $2.1 trillion in global market capitalization in worst single-day selloff since October 2023</li>
+                        <li>Technology and semiconductor stocks lead declines with losses exceeding 5% as major chipmakers issue weak guidance citing deteriorating demand across enterprise and consumer segments</li>
+                        <li>VIX volatility index surges 34% to 24.7, highest level in ten months, signaling elevated investor fear and expectations for continued market turbulence</li>
+                        <li>Multiple bellwether companies slash earnings guidance, with consensus S&P 500 estimates revised down 6.3% over past three months amid deteriorating economic indicators</li>
+                        <li>S&P 500 breaks below 200-day moving average for first time in fourteen months while forward P/E ratio of 19.2x remains elevated above ten-year average</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"The confluence of weakening economic data, deteriorating corporate earnings visibility, and persistently elevated valuations has created a perfect storm for equity markets. We're advising clients to reduce risk exposure significantly and move to defensive positioning, as we believe we're in the early innings of a broader market correction that could see the S&P 500 test 4,400 levels before finding sustainable support."</p>
+                    </blockquote>
+                    <p class="attribution">Jennifer Hartwell, Chief Investment Strategist at Blackstone Capital Advisors</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

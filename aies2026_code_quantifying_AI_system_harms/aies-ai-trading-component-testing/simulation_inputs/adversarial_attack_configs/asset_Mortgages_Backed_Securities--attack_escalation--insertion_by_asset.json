@@ -1,0 +1,6 @@
+{
+    "attack_type": "escalation",
+    "target_asset": "Mortgages Backed Securities",
+    "insertion_logic": "by_asset",
+    "custom_text": null
+}

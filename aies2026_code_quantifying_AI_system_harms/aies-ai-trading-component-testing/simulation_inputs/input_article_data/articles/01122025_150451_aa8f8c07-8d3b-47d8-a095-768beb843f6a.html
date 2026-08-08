@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&P 500 Surges to Record High as Tech Giants Lead Broad Market Rally, Investor Confidence Soars | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">15/11/2024 16:45:32 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">S&P 500 Surges to Record High as Tech Giants Lead Broad Market Rally, Investor Confidence Soars</h1>
+                <p class="article-meta__standfirst">US equity markets posted their strongest single-day gains in five months on Thursday, with the S&P 500 breaking through the 5,800 barrier for the first time as robust corporate earnings, cooling inflation data, and renewed institutional buying propelled technology and growth stocks higher. The rally extended across all eleven sectors, with market breadth reaching levels not seen since early 2021, signaling broad-based investor optimism about economic resilience and corporate profit growth.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Michael Chen and Sarah Robertson</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">15/11/2024 16:45:32</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">US equity markets delivered their most convincing performance of the year on Thursday, with the S&P 500 climbing 2.3% to close at 5,847, eclipsing its previous all-time high set in September. The technology-heavy Nasdaq Composite surged 3.1%, while the Dow Jones Industrial Average added 564 points to finish at 43,288. Trading volumes exceeded the 30-day average by 28%, with advancing stocks outnumbering decliners by a ratio of 7-to-1 on the New York Stock Exchange, the strongest breadth reading in nearly four years.</p>
+    <p>The rally was ignited by a confluence of positive catalysts that reinforced the narrative of a 'soft landing' for the US economy. Third-quarter earnings reports continued to exceed analyst expectations, with 79% of S&P 500 companies that have reported so far beating consensus estimates by an average of 8.4%. Semiconductor giant NovaTech Systems posted quarterly revenue growth of 34% year-over-year, while cloud infrastructure provider Cascade Networks announced a $15 billion share buyback program, sending its stock up 12% and lifting the broader software sector.</p>
+    <p>The technology sector led the advance, surging 3.8% as investors rotated back into growth-oriented names following weeks of defensive positioning. The 'Magnificent Seven' mega-cap technology stocks added a combined $420 billion in market capitalization, with artificial intelligence leader Quantum Dynamics gaining 5.2% after announcing partnerships with three Fortune 100 companies to deploy its enterprise AI platform. Financial services stocks also participated strongly, with the KBW Bank Index rising 2.7% on expectations that net interest margins will stabilize as the Federal Reserve approaches the end of its rate adjustment cycle.</p>
+    <p>Institutional investors have been notable buyers throughout the week, with equity fund inflows reaching $24.3 billion over the past five trading sessions, according to data from Strategic Capital Research. This marks the strongest consecutive weekly inflows since December 2023 and suggests that portfolio managers who had been sitting on elevated cash positions are now putting capital to work. The VIX volatility index, often referred to as Wall Street's 'fear gauge,' dropped 18% to close at 13.2, its lowest level in six months, indicating investor complacency and confidence in market stability.</p>
+    <p>Economic data released Thursday morning provided additional support for equity valuations, with the October Consumer Price Index rising just 0.2% month-over-month, below the 0.3% consensus forecast. Core inflation, which excludes volatile food and energy prices, increased 0.3%, marking the slowest three-month average pace in two years. The benign inflation print has prompted several investment banks to revise their Federal Reserve policy expectations, with Goldman Sterling now projecting two quarter-point rate cuts in 2025 rather than the single cut previously forecast, a scenario that would be constructive for equity valuations.</p>
+    <p>Looking ahead, market strategists see multiple tailwinds supporting further gains in equity markets through year-end. Corporate profit margins remain near record highs at 12.4%, while S&P 500 forward price-to-earnings multiples of 19.2x remain within historical ranges despite the recent rally. Additionally, seasonal patterns favor equities during the November-December period, with the S&P 500 posting positive returns in this timeframe in 83% of years since 1950. With $6.2 trillion still sitting in money market funds yielding diminishing returns, analysts believe significant capital remains on the sidelines waiting to enter equity markets, providing a substantial support mechanism for continued appreciation.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>S&P 500 reaches record high of 5,847, up 2.3% in strongest single-day rally since June, with all eleven sectors posting gains</li>
+                        <li>Market breadth hits nearly four-year high with 7-to-1 advance-decline ratio as institutional inflows reach $24.3 billion over five trading sessions</li>
+                        <li>Third-quarter earnings season exceeds expectations with 79% of reporting companies beating estimates by average of 8.4%, led by technology and financial sectors</li>
+                        <li>October inflation data comes in below consensus at 0.2% monthly increase, prompting investment banks to revise Federal Reserve rate cut projections higher</li>
+                        <li>VIX volatility index plunges 18% to six-month low of 13.2, signaling robust investor confidence and declining risk premiums</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"We're witnessing a powerful reaffirmation of the equity bull market thesis. The combination of resilient corporate earnings growth, moderating inflation, and substantial liquidity waiting on the sidelines creates an exceptionally favorable backdrop for stocks. The breadth of today's rally, with participation across sectors and market capitalizations, suggests this isn't just a momentum chase in a handful of names—it's a genuine broad-based shift in investor sentiment that could carry equities significantly higher into 2025."</p>
+                    </blockquote>
+                    <p class="attribution">Jennifer Martinez, Chief Investment Strategist at Pinnacle Wealth Management</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

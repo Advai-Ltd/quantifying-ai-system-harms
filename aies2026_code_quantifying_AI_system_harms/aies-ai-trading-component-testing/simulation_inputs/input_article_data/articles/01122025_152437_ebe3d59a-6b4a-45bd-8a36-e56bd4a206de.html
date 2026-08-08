@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasury Yields Hold Steady as Investors Await Key Economic Data Releases | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">15/01/2025 14:32:18 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Treasury Yields Hold Steady as Investors Await Key Economic Data Releases</h1>
+                <p class="article-meta__standfirst">Government bond markets traded in narrow ranges across major economies on Wednesday, with yields stabilizing following recent volatility as investors adopted a wait-and-see approach ahead of crucial inflation and employment reports. The 10-year US Treasury yield hovered near 4.25%, while European sovereigns showed similar stability, reflecting a balanced market sentiment amid mixed economic signals and central bank policy uncertainty.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Sarah Mitchell and David Chen</span>
+                    <span class="article-meta__location">in London</span>
+                    <span class="article-meta__timestamp">15/01/2025 14:32:18</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">Government bond markets across developed economies displayed muted trading activity on Wednesday, with yields consolidating recent moves as investors positioned themselves cautiously ahead of key macroeconomic data scheduled for release later this week. The 10-year US Treasury note yielded 4.25%, virtually unchanged from Tuesday's close, while the 2-year note held at 4.18%, maintaining the current yield curve configuration that has characterized markets since the start of the year.</p>
+    <p>European sovereign debt markets mirrored the stability seen in US Treasuries, with the German 10-year Bund yielding 2.38% and UK Gilts at 4.52%, both trading within tight 3-basis-point ranges throughout the session. Trading volumes remained below recent averages, suggesting market participants are reluctant to establish significant new positions until greater clarity emerges on the economic outlook and central bank policy trajectory.</p>
+    <p>The current market environment reflects a delicate balance between competing forces, with inflation showing signs of moderating in some regions while remaining persistently elevated in others. Recent auction results have demonstrated consistent demand across the maturity spectrum, with the US Treasury's sale of $24 billion in 10-year notes on Tuesday attracting a bid-to-cover ratio of 2.51, in line with recent averages and indicating steady institutional appetite for government debt.</p>
+    <p>Market analysts note that the relative calm in sovereign bond markets stands in contrast to the heightened volatility observed in December, when yields swung sharply on conflicting signals from central banks and economic data. The current stabilization suggests investors have largely priced in expectations for gradual monetary policy adjustments over the coming quarters, though sensitivity to upcoming data releases remains elevated.</p>
+    <p>Primary market activity continues at a measured pace, with governments across major economies maintaining their regular issuance schedules. The European Central Bank's bond holdings under its asset purchase programmes have declined by approximately €85 billion since the start of quantitative tightening, a process that market participants have absorbed without significant disruption. Meanwhile, the Bank of Japan has maintained its flexible yield curve control framework, allowing the 10-year Japanese Government Bond to trade around 0.65%.</p>
+    <p>Looking ahead, market participants are focusing on forthcoming inflation reports from the United States and Europe, along with employment data that could influence central bank deliberations. The Federal Reserve's next policy meeting is scheduled for late January, with markets currently pricing in a relatively even split between expectations for no change and a potential 25-basis-point adjustment. Duration positioning among institutional investors remains close to benchmark weights, reflecting the current equilibrium in market sentiment and the absence of strong directional conviction among portfolio managers.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>US 10-year Treasury yields stable at 4.25% with trading volumes below recent averages</li>
+                        <li>European sovereign debt markets showing similar stability with German Bunds at 2.38% and UK Gilts at 4.52%</li>
+                        <li>Recent US Treasury auction attracted bid-to-cover ratio of 2.51, consistent with recent demand patterns</li>
+                        <li>Investors maintaining cautious positioning ahead of key inflation and employment data releases this week</li>
+                        <li>Duration positioning among institutional investors remains near benchmark weights across major markets</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"The current environment represents a period of recalibration for fixed income markets. Investors are neither aggressively buying the dip nor rushing for the exits, instead taking a measured approach as they assess the evolving economic landscape and central bank policy paths."</p>
+                    </blockquote>
+                    <p class="attribution">Marcus Thornton, Head of Sovereign Debt Strategy at Pemberton Asset Management</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

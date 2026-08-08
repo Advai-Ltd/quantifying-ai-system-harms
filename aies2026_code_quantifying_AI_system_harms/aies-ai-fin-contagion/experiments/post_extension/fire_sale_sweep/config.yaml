@@ -1,0 +1,157 @@
+# Post-Extension: Fire Sale Sweep Base Configuration
+#
+# This config is used for the fire sale intensity parameter sweep.
+# The fire_sale_intensity will be overridden for each sweep level.
+#
+# Fire sale intensities tested: 0%, 1%, 3%, 5%, 7%, 10%, 12%, 15%
+#
+# This is the post-2008 system with:
+#   - Fire sale compounding: DISABLED (uses initial market size)
+#   - Option A: Variable interbank exposure
+#   - Option D: Stochastic network topology
+#   - Option F: Heterogeneous external assets
+#   - Basel III reforms: Higher capital, lower connectivity
+#   - Correlation: 0.6 (standard)
+
+metadata:
+  experiment_id: POST_EXTENSION_FIRE_SALE_SWEEP
+  scenario_id: FIRE_SALE_PARAMETER_SWEEP
+  scenario_name: Post-Extension Fire Sale Parameter Sweep
+  description: Fire sale intensity sweep on post-2008 system with fixed fire sale mechanics
+  hypothesis: With fixed fire sales, realistic intensity range (0-15%) shows gradual threshold erosion
+  tags:
+    - post-extension
+    - post-2008
+    - basel-iii
+    - fire-sale-sweep
+    - parameter-sweep
+
+network:
+  mode: stochastic
+  topology: post_2008_reformed
+  structure_seed: 42
+  parameter_seed: 100
+  num_banks: 50
+  num_core_banks: 10
+
+  core_banks:
+    capital_ratio:
+      distribution: normal
+      mean: 0.13
+      std: 0.015
+      min: 0.10            # Basel III minimum
+      max: 0.18
+
+    portfolio:
+      mortgage:
+        distribution: uniform
+        min: 0.20
+        max: 0.60
+      government_bond:
+        distribution: uniform
+        min: 0.10
+        max: 0.40
+      corporate_bond:
+        distribution: uniform
+        min: 0.10
+        max: 0.40
+      stock:
+        distribution: uniform
+        min: 0.10
+        max: 0.40
+
+    total_assets: 500.0
+    external_assets_fraction: 0.90
+
+    interbank_assets_fraction:
+      distribution: normal
+      mean: 0.10        # Basel III reduced
+      std: 0.03
+      min: 0.05
+      max: 0.18
+
+  periphery_banks:
+    capital_ratio:
+      distribution: normal
+      mean: 0.105
+      std: 0.015
+      min: 0.10            # Basel III minimum
+      max: 0.14
+
+    portfolio:
+      mortgage:
+        distribution: uniform
+        min: 0.25
+        max: 0.70
+      government_bond:
+        distribution: uniform
+        min: 0.05
+        max: 0.35
+      corporate_bond:
+        distribution: uniform
+        min: 0.05
+        max: 0.35
+      stock:
+        distribution: uniform
+        min: 0.05
+        max: 0.35
+
+    total_assets: 100.0
+    external_assets_fraction: 0.92
+
+    interbank_assets_fraction:
+      distribution: normal
+      mean: 0.08        # Basel III reduced
+      std: 0.025
+      min: 0.04
+      max: 0.14
+
+  connectivity:
+    core_to_core: 0.5
+    core_to_periphery: 0.4
+    periphery_to_core: 0.3
+    periphery_to_periphery: 0.2
+    core_to_core_exposure:
+      distribution: uniform
+      min: 3.0
+      max: 6.0
+    core_to_periphery_exposure:
+      distribution: uniform
+      min: 1.0
+      max: 3.0
+    periphery_to_core_exposure:
+      distribution: uniform
+      min: 0.5
+      max: 2.0
+    periphery_to_periphery_exposure:
+      distribution: uniform
+      min: 0.3
+      max: 1.5
+
+shock:
+  mode: correlated
+  asset_shocks:
+    government_bond: 0.02
+    corporate_bond: -0.10
+    mortgage: -0.20
+    stock: -0.15
+  correlation: 0.6
+  fire_sale_intensity: 0.05  # This will be overridden during sweep
+  shock_volatility: 0.03
+
+simulation:
+  num_runs: 200
+  seed: 42
+  fire_sales_enabled: true
+  use_priority_claims: true
+
+output:
+  output_dir: experiments/post_extension/fire_sale_sweep/output
+  save_summary: true
+  save_detailed_results: true
+  save_network_snapshots: true
+  save_config_copy: true
+  verbose: false
+  generate_plots: true
+  plot_formats:
+    - png

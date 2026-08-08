@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasury Yields Surge to 16-Year Highs as Investors Flee Government Bonds Amid Inflation Fears | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">15/03/2024 14:32:17 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Treasury Yields Surge to 16-Year Highs as Investors Flee Government Bonds Amid Inflation Fears</h1>
+                <p class="article-meta__standfirst">Government bond markets are experiencing their worst selloff in decades as the 10-year Treasury yield breaches 5.2%, triggering massive outflows from sovereign debt securities. Persistent inflation concerns, hawkish central bank rhetoric, and mounting fiscal deficits are driving investors away from traditional safe-haven assets, threatening to destabilize global fixed-income markets and dramatically increase borrowing costs for governments worldwide.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Sarah Chen and Michael Thornton</span>
+                    <span class="article-meta__location">in New York/London</span>
+                    <span class="article-meta__timestamp">15/03/2024 14:32:17</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">Government bonds suffered a brutal rout on Thursday as yields surged to levels not seen since 2007, with the benchmark 10-year Treasury note climbing above 5.2% in afternoon trading. The selloff accelerated after stronger-than-expected inflation data showed core consumer prices rising 4.8% year-over-year, well above the Federal Reserve's 2% target and dashing hopes for near-term interest rate cuts. Bond prices tumbled across the curve, with the 30-year Treasury losing more than two points in value as institutional investors rushed to exit positions.</p>
+    <p>The carnage in sovereign debt markets has erased nearly $2.3 trillion in value from global government bond portfolios since the start of the year, according to data from Bloomberg Barclays indices. The iShares 20+ Year Treasury Bond ETF has plunged 12% year-to-date, putting it on track for one of its worst annual performances since the fund's inception. Mutual funds specializing in government securities have recorded $47 billion in net outflows over the past six weeks, the longest sustained redemption streak in over a decade.</p>
+    <p>Central bank commentary has turned decidedly hawkish, further pressuring bond valuations. Federal Reserve Chair Jerome Powell indicated in congressional testimony earlier this week that the central bank may need to maintain restrictive monetary policy for 'considerably longer than previously anticipated' to bring inflation under control. European Central Bank President Christine Lagarde echoed similar sentiments, stating that eurozone rates could remain elevated through 2025. The Bank of England also signaled its intention to keep its benchmark rate above 5.5% for the foreseeable future, citing stubborn wage growth and services inflation.</p>
+    <p>Fiscal concerns are compounding the technical selling pressure in government bond markets. The U.S. Congressional Budget Office projects the federal deficit will exceed $2 trillion in fiscal 2024, requiring unprecedented levels of Treasury issuance at a time when demand from traditional buyers is waning. China and Japan, historically the largest foreign holders of U.S. government debt, have reduced their combined Treasury holdings by $340 billion over the past 18 months. Meanwhile, the U.S. Treasury Department announced plans to increase its quarterly auction sizes by 15% to finance growing budget shortfalls, threatening to flood an already saturated market with additional supply.</p>
+    <p>The yield curve inversion that dominated market discussions throughout 2023 has now completely reversed, with the 10-year/2-year spread turning positive by 45 basis points. While this typically signals economic expansion, the violent nature of the move suggests bond market dysfunction rather than improving growth expectations. Credit default swap spreads on sovereign debt have widened significantly, with 5-year CDS protection on U.S. Treasuries climbing to 62 basis points, the highest level since the 2011 debt ceiling crisis. German Bund yields have similarly surged past 3%, while UK Gilt yields are approaching 4.8%, levels that precipitated last year's pension fund crisis.</p>
+    <p>Technical indicators suggest further downside for government bonds. The 14-day Relative Strength Index for Treasury futures has fallen into deeply oversold territory below 25, yet momentum remains decidedly negative with no signs of capitulation selling. Major pension funds and insurance companies, traditionally price-insensitive buyers of long-dated sovereign debt, have reportedly shifted allocations away from government bonds toward corporate credit and alternative fixed-income strategies. Algorithmic trading models have turned uniformly bearish on duration exposure, with systematic funds holding their largest net short positions in Treasury futures since records began in 2006.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>10-year Treasury yield surges above 5.2%, reaching highest level since 2007 with accelerating momentum</li>
+                        <li>Global government bond funds experience $47 billion in outflows over six weeks, marking longest redemption streak in a decade</li>
+                        <li>Federal Reserve signals extended restrictive policy timeline, with rate cuts now pushed back to late 2025 or beyond</li>
+                        <li>U.S. fiscal deficit projected to exceed $2 trillion in 2024, requiring 15% increase in quarterly Treasury auction sizes</li>
+                        <li>China and Japan reduce combined Treasury holdings by $340 billion, eliminating crucial source of government bond demand</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"The government bond market is facing a perfect storm of deteriorating fundamentals, technical selling, and structural demand erosion. We haven't seen this combination of negative factors since the 1970s stagflation era. Investors need to recognize that the four-decade bull market in sovereign debt is definitively over, and the risk-reward profile for government bonds has fundamentally shifted for the worse."</p>
+                    </blockquote>
+                    <p class="attribution">Marcus Ashworth, Chief Fixed Income Strategist at Bridgewater Global Advisors</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

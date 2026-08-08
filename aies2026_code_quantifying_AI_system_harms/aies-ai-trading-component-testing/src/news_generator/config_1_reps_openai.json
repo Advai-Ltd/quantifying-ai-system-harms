@@ -1,0 +1,19 @@
+{
+    "repeats_per_combination": 1,
+    "models": [
+        "openai/gpt-5-mini"
+    ],
+    "news_providers": ["Financial Times"],
+    "asset_classes": [
+        "Equities",
+        "Corporate Bonds",
+        "Government Bonds",
+        "Mortgages Backed Securities (MBS)"
+    ],
+    "sentiment": [
+        "bullish",
+        "neutral",
+        "bearish"
+    ]
+}
+

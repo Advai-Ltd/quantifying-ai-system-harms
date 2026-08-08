@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Stocks Tumble as Rate Fears and Earnings Warnings Trigger Broad Market Selloff | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">14/02/2024 16:45:32 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Tech Stocks Tumble as Rate Fears and Earnings Warnings Trigger Broad Market Selloff</h1>
+                <p class="article-meta__standfirst">US equities suffered their steepest decline in four months on Tuesday as mounting concerns over prolonged elevated interest rates and a wave of disappointing earnings guidance from technology giants sent shockwaves through investor portfolios. The S&P 500 plunged 2.8% while the Nasdaq Composite shed 3.4%, marking the worst single-day performance since October as investors fled risk assets amid deteriorating corporate outlook and persistent inflation pressures.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Michael Patterson and Sarah Chen</span>
+                    <span class="article-meta__location">in NEW YORK</span>
+                    <span class="article-meta__timestamp">14/02/2024 16:45:32</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">Wall Street experienced a brutal selloff on Tuesday as technology stocks led a broad-based retreat that wiped out $1.2 trillion in market capitalization within a single trading session. The S&P 500 closed down 147 points at 4,987, while the tech-heavy Nasdaq Composite tumbled 542 points to 15,621. The Dow Jones Industrial Average fell 623 points, or 1.6%, as investor sentiment deteriorated rapidly following renewed hawkish commentary from Federal Reserve officials and a cascade of profit warnings from major technology firms.</p>
+    <p>The rout intensified during afternoon trading after semiconductor giant TechFlow Systems slashed its quarterly revenue forecast by 18%, citing weakening demand across enterprise and consumer segments. Shares of TechFlow plummeted 14.2% to $187.43, dragging the Philadelphia Semiconductor Index down 4.7% in its worst performance since March 2023. Cloud computing leader NexGen Solutions followed suit, announcing a 12% workforce reduction and warning that enterprise software spending had contracted sharply in January, sending its stock down 11.8% to $342.15.</p>
+    <p>The selloff comes as investors reassess lofty valuations in the technology sector amid mounting evidence that corporate earnings growth is decelerating faster than anticipated. Forward price-to-earnings ratios for the S&P 500 Information Technology sector now stand at 28.4x, well above the ten-year average of 22.1x, raising concerns that recent gains have significantly outpaced fundamental performance. Trading volumes surged to 14.2 billion shares on US exchanges, 37% above the 30-day average, as algorithmic selling programs were triggered by technical breakdowns across major indices.</p>
+    <p>Financial sector stocks also came under pressure as the yield curve inversion deepened, with the spread between 10-year and 2-year Treasury yields widening to negative 47 basis points. Regional banks were particularly hard hit, with the KBW Regional Banking Index dropping 3.2% as investors worried about deteriorating loan quality and compressed net interest margins. FirstNational Bancorp fell 7.4% after disclosing a $340 million increase in non-performing commercial real estate loans, while Metro Financial Group declined 6.1% on concerns about exposure to struggling office property portfolios.</p>
+    <p>Consumer discretionary stocks extended their year-to-date losses as mounting evidence suggests American households are pulling back on spending amid persistent inflation and declining savings rates. Retail giant AmeriShop Corporation tumbled 8.9% after reporting same-store sales declined 3.7% in January, the fourth consecutive monthly contraction. Luxury goods manufacturer Prestige Brands International dropped 9.2% following weak guidance that cited softening demand in key Asian markets, particularly China where consumer confidence remains depressed.</p>
+    <p>Market strategists are increasingly cautioning that equity markets face a challenging environment in the coming months as the confluence of elevated interest rates, slowing economic growth, and contracting profit margins creates significant headwinds for stock valuations. Options market data shows investors are positioning for increased volatility, with the CBOE Volatility Index surging 24% to 18.7, its highest level since November. Put-to-call ratios have climbed to levels not seen since the banking crisis last spring, suggesting institutional investors are aggressively hedging against further downside risk in equity portfolios.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>S&P 500 plunges 2.8% and Nasdaq drops 3.4% in worst single-day decline since October, erasing $1.2 trillion in market value</li>
+                        <li>TechFlow Systems and NexGen Solutions issue severe earnings warnings, triggering 11-14% stock declines and sector-wide selloff</li>
+                        <li>Forward P/E ratios for technology sector at 28.4x versus 10-year average of 22.1x, raising overvaluation concerns amid slowing growth</li>
+                        <li>Regional banking stocks fall 3.2% as yield curve inversion deepens and commercial real estate loan quality deteriorates</li>
+                        <li>VIX volatility index surges 24% to 18.7 as institutional investors increase hedging activity against further equity market declines</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"The combination of stretched valuations, deteriorating earnings visibility, and the Fed's apparent determination to keep rates higher for longer creates a toxic environment for equity markets. We're advising clients to reduce exposure to growth stocks and shift toward defensive positioning as the risk-reward profile has turned decidedly negative."</p>
+                    </blockquote>
+                    <p class="attribution">Jennifer Morrison, Chief Investment Strategist at Wellington Asset Management</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

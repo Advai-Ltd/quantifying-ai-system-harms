@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency MBS Spreads Widen Sharply on Duration Fears and Persistent Supply Overhang | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">14/08/2024 10:45:00 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Agency MBS Spreads Widen Sharply on Duration Fears and Persistent Supply Overhang</h1>
+                <p class="article-meta__standfirst">Mortgage-Backed Securities (MBS) experienced significant spread widening against benchmark Treasuries this week, driven by persistent supply pressures and mounting investor concerns over duration extension risk in the 'higher-for-longer' interest rate environment. This bearish move is compressing institutional returns and prompting technical selling pressure across the secondary market.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Eleanor Vance, Senior Fixed Income Correspondent</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">14/08/2024 10:45:00</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">The Agency MBS sector, typically viewed as a bedrock of stability in fixed income, is grappling with severe technical headwinds. Spreads on current-coupon Fannie Mae and Freddie Mac 30-year pools widened between 8 and 12 basis points (bps) over the last trading session, pushing them toward levels last seen during periods of peak liquidity stress.</p>
+    <p>A key driver of this bearish performance is the sustained 'higher-for-longer' interest rate environment. High mortgage rates have effectively closed the refinancing window for homeowners, causing prepayment speeds (CPRs) to plummet. This slowdown in prepayments triggers duration extension—the effective maturity of the bonds lengthens—making the securities significantly more susceptible to changes in the interest rate curve than their nominal duration suggests.</p>
+    <p>Market participants are struggling to absorb a persistent supply influx. Despite reduced origination volumes compared to prior years, the secondary market continues to face heavy technical selling, amplified by reduced balance sheet capacity from primary dealers. Furthermore, the Federal Reserve’s quantitative tightening (QT) program means the largest consistent buyer of MBS is now absent, leaving a void that private sector demand has yet to fill adequately.</p>
+    <p>The widening spreads have created a valuation dilemma. Many institutional investors, particularly regional banks and leveraged funds, are facing mark-to-market losses. Analysts at Zenith Securities noted that hedge ratios are becoming increasingly challenging to maintain, often leading to forced liquidations in attempts to manage overall portfolio duration risk, thereby exacerbating the spread widening cycle.</p>
+    <p>Unless there is a significant change in Federal Reserve guidance or a sudden, unexpected reduction in long-term rates, the technical structure of the MBS market suggests continued pressure. Investors are now demanding substantially higher risk premiums (yield concessions) to compensate for the elevated volatility and uncertain path of future prepayment rates.</p>
+    <p>Focus is now shifting to upcoming housing data releases and scheduled supply auctions. A softer-than-expected housing market could further complicate the outlook, potentially introducing concerns about credit quality in non-agency segments, even as agency pools remain insulated by government guarantees.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>Agency MBS spreads widened 8-12 bps across the coupon stack, signaling reduced liquidity and increased risk perception.</li>
+                        <li>The effective duration of key current-coupon MBS pools has increased by an estimated 0.3 years, raising rate sensitivity for institutional holders.</li>
+                        <li>Primary dealer inventories remain elevated, indicating difficulties in distributing new issuance and secondary market volume without further yield concessions.</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"The market is fundamentally struggling with a valuation disconnect. With benchmark rates holding firm and the refinancing window slammed shut, the embedded duration risk in many MBS pools is simply not priced correctly yet. We anticipate continued pressure on the sector throughout Q3."</p>
+                    </blockquote>
+                    <p class="attribution">Dr. Jeffrey Klein, Head of Fixed Income Strategy at Meridian Capital Group</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

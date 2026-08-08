@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate bond market reels as yields spike and spreads widen in broad bearish repricing | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">01/12/2025 14:23:00 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Corporate bond market reels as yields spike and spreads widen in broad bearish repricing</h1>
+                <p class="article-meta__standfirst">Corporate bonds slid into a broad-based sell-off as rising Treasury yields, a fresh round of downgrades and heavy fund outflows forced a swift repricing across investment-grade and high-yield sectors. Market liquidity thinned, issuance stalled and credit spreads extended sharply, leaving borrowers facing materially higher funding costs and investors scrambling to re‑weight portfolios toward shorter maturities and higher-quality credits.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Olivia Marsh</span>
+                    <span class="article-meta__location">in London</span>
+                    <span class="article-meta__timestamp">01/12/2025 14:23:00</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">The corporate bond market experienced a pronounced bear phase on Monday, with investment-grade spreads widening roughly 45 basis points to an average option-adjusted spread (OAS) of 165bps and high-yield spreads leaping some 120bps to near 520bps, according to Harbor Fixed Income data. The move accelerated after the U.S. 10-year Treasury yield jumped to 4.45% — up 35bps on the session — as markets re-priced the path of policy rates and the near-term probability of soft‑landing diminished. Volume in secondary markets was heavy on the sell side and bid-ask differentials widened markedly, signaling deteriorating liquidity.</p>
+    <p>Several concurrent shocks amplified selling pressure. Harbridge Ratings downgraded Asteron Energy's senior unsecured debt two notches to BB+ from BBB-, citing weaker cashflow coverage and a higher-than-expected capex outlook, prompting a cascade of forced sales in energy-linked credit funds. Veridian Telecom and Calyx Automotive both issued profit warnings that increased default concerns in cyclical sectors. Market participants described a rapid shift from credit-on to credit-off conditions as macro uncertainty collided with issuer-specific weakness.</p>
+    <p>Primary markets effectively froze for riskier borrowers. Weekly new issuance of investment-grade corporates plunged approximately 60% versus the prior month, falling to an estimated $12bn as bookrunners demanded larger new-issue concessions and longer re-offer yields. Covenant‑lite deals were virtually absent, and several planned transactions were pulled or repriced with higher yields and tighter size caps. Dealers reported they were forced to warehouse incremental risk at substantial markdowns, raising the cost of distribution for issuers.</p>
+    <p>Liquidity stress and fund flows compounded price action. Corporate bond mutual funds and ETFs recorded combined outflows of roughly $5.2bn last week as investors rotated to cash and sovereign debt; secondary market turnover fell while bid liquidity evaporated in lower-tier credits. Portfolio managers said they were reducing duration and tightening credit selection, prioritizing top-tier balance sheets and shorter-dated paper. 'We're seeing a structural repricing across credit markets — it's a liquidity‑driven widening that is exacerbating fundamental concerns,' said Maya R. Chen, senior credit strategist at Northbridge Capital.</p>
+    <p>Analysts and strategists are revising loss and default assumptions. Several sell‑side teams raised their 12-month default-rate estimates for CCC and below categories to the mid‑teens while nudging expected high‑yield defaults overall closer to 7% over the next year. For investment-grade issuers, refinancing risk is the dominant theme: increasing benchmark yields and wider spreads are pushing effective borrowing costs higher and reducing the pool of willing lenders. Firms with heavy maturities in the next 18 months are being forced to consider pre‑funding strategies or asset sales at depressed multiples.</p>
+    <p>Looking ahead, market participants expect elevated volatility to persist until rate expectations and macro data stabilize. Some opportunistic credit investors are monitoring stressed but solvent names for selective entry, while most institutional portfolios are shifting toward higher-quality short-duration corporates and increased cash buffers. The consensus among sell‑side strategists is clear: until liquidity normalizes and downgrade momentum abates, spreads are likely to remain pressured and issuance will be subdued, keeping corporate funding costs materially above levels seen earlier this year.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>Investment-grade OAS widened ~45bps to 165bps; high-yield spreads expanded ~120bps to ~520bps, driven by higher U.S. Treasury yields and risk-off flows.</li>
+                        <li>Harbridge Ratings downgraded Asteron Energy to BB+ from BBB-, triggering accelerated selling in energy and related sectors.</li>
+                        <li>Corporate bond funds and ETFs recorded estimated outflows of $5.2bn last week; primary IG issuance fell ~60% month-over-month as new-issue concessions widened and deals were pulled.</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"This is a classic liquidity‑driven repricing — spreads are widening faster than fundamentals alone would justify because dealers and funds are reluctant to hold incremental risk. Until we see clearer rate signals or a pause in downgrades, expect issuance to remain constrained and volatility to stay elevated."</p>
+                    </blockquote>
+                    <p class="attribution">Maya R. Chen, Senior Credit Strategist, Northbridge Capital</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

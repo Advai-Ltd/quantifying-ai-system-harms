@@ -1,0 +1,6 @@
+{
+    "attack_type": "model_address",
+    "target_asset": "Equities",
+    "insertion_logic": "by_asset",
+    "custom_text": null
+}

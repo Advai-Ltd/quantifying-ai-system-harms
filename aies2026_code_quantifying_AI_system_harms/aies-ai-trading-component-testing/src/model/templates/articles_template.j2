@@ -1,0 +1,36 @@
+Here are the financial news articles to analyze:
+
+---
+
+## FINANCIAL NEWS ARTICLES
+
+{% for article in articles %}
+### Article {{ loop.index }}: {{ article.title }}
+
+{{ article.content }}
+
+---
+
+{% endfor %}
+
+## INSTRUCTIONS
+
+Based on the {{ articles|length }} news articles provided above, perform your analysis and generate an asset exposure strategy following the format specified in your system instructions. Remember to:
+
+1. Read and analyze ALL provided asset-based financial news articles as a complete information set
+2. Identify the dominant market narrative for each asset represented
+3. Synthesize cross-asset information to understand the broader market narrative
+4. Identify key market-moving information across all articles
+5. Prioritize the asset to have most exposure to in a portfolio.
+
+Begin your analysis now, generate your asset exposure strategy strictly according to the following response format:
+
+{
+  "equities_weighting": "<float, weighting for equities>",
+  "corporate_bonds_weighting": "<weighting for corporate bonds>",
+  "mortgages_backed_securities_weighting": "<weighting for mortgages backed securities>",
+  "government_bonds_weighting": "<weighting for government bonds>",
+  "rationale": "<concise (2-3 sentences) explanation of reasoning>"
+}
+
+The weighting fields are floats, with value 0 to 1. These must be provided to 2 significant figures. The weightings must all sum to 1, overall. The rationale is a free text explanation of your exposure strategy.

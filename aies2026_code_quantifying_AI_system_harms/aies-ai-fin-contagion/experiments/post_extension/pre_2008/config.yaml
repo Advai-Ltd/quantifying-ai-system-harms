@@ -1,0 +1,153 @@
+# Post-Extension: Pre-2008 Configuration
+#
+# This is the improved model after fixing binary behavior issues:
+#   - Fire sale intensity: 0.05 (reduced from 0.15)
+#   - Fire sale compounding: DISABLED (uses initial market size)
+#   - Option A: Variable interbank exposure
+#   - Option D: Stochastic network topology
+#   - Option F: Heterogeneous external assets
+#   - Correlation: 0.6 (standard)
+#
+# Expected: ~33% partial failures (realistic distribution)
+
+metadata:
+  experiment_id: POST_EXTENSION_PRE_2008
+  scenario_id: PRE_2008_NO_BINARY
+  scenario_name: Post-Extension Pre-2008
+  description: Pre-2008 with fixed fire sales and heterogeneous portfolios
+  hypothesis: Reduced fire sales with no compounding produces realistic partial failures
+  tags:
+    - post-extension
+    - pre-2008
+    - no-binary
+    - realistic
+
+network:
+  mode: stochastic
+  topology: pre_2008
+  structure_seed: 42
+  parameter_seed: 100
+  num_banks: 50
+  num_core_banks: 10
+
+  core_banks:
+    capital_ratio:
+      distribution: normal
+      mean: 0.07
+      std: 0.012
+      min: 0.05
+      max: 0.09
+
+    portfolio:
+      mortgage:
+        distribution: uniform
+        min: 0.20
+        max: 0.60
+      government_bond:
+        distribution: uniform
+        min: 0.10
+        max: 0.40
+      corporate_bond:
+        distribution: uniform
+        min: 0.10
+        max: 0.40
+      stock:
+        distribution: uniform
+        min: 0.10
+        max: 0.40
+
+    total_assets: 500.0
+    external_assets_fraction: 0.85
+
+    interbank_assets_fraction:
+      distribution: normal
+      mean: 0.15
+      std: 0.05
+      min: 0.08
+      max: 0.30
+
+  periphery_banks:
+    capital_ratio:
+      distribution: normal
+      mean: 0.05
+      std: 0.015
+      min: 0.03
+      max: 0.08
+
+    portfolio:
+      mortgage:
+        distribution: uniform
+        min: 0.25
+        max: 0.70
+      government_bond:
+        distribution: uniform
+        min: 0.05
+        max: 0.35
+      corporate_bond:
+        distribution: uniform
+        min: 0.05
+        max: 0.35
+      stock:
+        distribution: uniform
+        min: 0.05
+        max: 0.35
+
+    total_assets: 100.0
+    external_assets_fraction: 0.88
+
+    interbank_assets_fraction:
+      distribution: normal
+      mean: 0.12
+      std: 0.04
+      min: 0.05
+      max: 0.22
+
+  connectivity:
+    core_to_core: 0.8
+    core_to_periphery: 0.7
+    periphery_to_core: 0.6
+    periphery_to_periphery: 0.6
+    core_to_core_exposure:
+      distribution: uniform
+      min: 4.0
+      max: 8.0
+    core_to_periphery_exposure:
+      distribution: uniform
+      min: 1.5
+      max: 4.0
+    periphery_to_core_exposure:
+      distribution: uniform
+      min: 1.0
+      max: 3.0
+    periphery_to_periphery_exposure:
+      distribution: uniform
+      min: 0.5
+      max: 2.0
+
+shock:
+  mode: correlated
+  asset_shocks:
+    government_bond: 0.02
+    corporate_bond: -0.10
+    mortgage: -0.20
+    stock: -0.15
+  correlation: 0.6
+  fire_sale_intensity: 0.05  # REDUCED from 0.15
+  shock_volatility: 0.03
+
+simulation:
+  num_runs: 200
+  seed: 42
+  fire_sales_enabled: true
+  use_priority_claims: true
+
+output:
+  output_dir: experiments/post_extension/pre_2008/output
+  save_summary: true
+  save_detailed_results: true
+  save_network_snapshots: true
+  save_config_copy: true
+  verbose: false
+  generate_plots: true
+  plot_formats:
+    - png

@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+tags
+
+# Experiment results
+results/
+!results/.gitkeep
+
+# Experiment output directories (contain large JSON files 100MB+)
+experiments/*/output/
+experiments/*/*/output/
+experiments/*/*/*/output/
+
+# Large detailed results files (150MB+ each)
+**/detailed_results.json
+
+# Keep small summary files but ignore if they get too large
+# (summary files are typically < 1MB)
+
+# OS
+.DS_Store
+Thumbs.db
+
+

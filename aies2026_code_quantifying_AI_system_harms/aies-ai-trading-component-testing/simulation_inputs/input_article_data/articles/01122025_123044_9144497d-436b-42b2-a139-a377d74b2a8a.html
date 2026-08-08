@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equities Trade Cautiously as Mixed Signals Keep Markets Range-Bound | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">01/12/2025 10:15:00 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Equities Trade Cautiously as Mixed Signals Keep Markets Range-Bound</h1>
+                <p class="article-meta__standfirst">Global equity markets held a cautious tone Wednesday, with major indices trading in tight ranges as investors absorbed a stream of in-line earnings, steady macro data and measured central bank commentary. Sector rotation and muted flows left headline indices largely unchanged, underscoring a neutral market backdrop where stock-specific moves, rather than broad risk appetite, are dictating returns.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Ava Martinez, Senior Markets Correspondent</span>
+                    <span class="article-meta__location">in London</span>
+                    <span class="article-meta__timestamp">01/12/2025 10:15:00</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">Stocks showed little conviction in early European and US sessions, with the S&P 500 edging up 0.1% to 5,217.4, the FTSE 100 rising 0.2% to 7,889.1 and the Stoxx Europe 600 slipping 0.05% to 514.3. Trading volumes on major venues were slightly below the 30-day average, while the CBOE VIX held near 14.2, reflecting a subdued volatility environment. Market breadth was narrow: energy and staples outperformed modestly while discretionary and small-cap names lagged.</p>
+    <p>The day's activity was driven more by company-level news than by a broad market move. Arcadia Energy, a mid-cap utilities operator, rose 1.8% after delivering quarterly results broadly in line with estimates and reaffirming its dividend. BlueHarbor Technologies dipped 2.3% after management guided to flat revenue for the coming quarter, citing softer enterprise spending. Retailer Crestview reported comparable-store sales growth consistent with consensus and traded flat as investors parsed its margin commentary. These stock-specific swings reinforced the market's neutral tone.</p>
+    <p>Macro developments offered few surprises. Core inflation readings remained stable, and an updated regional manufacturing PMI printed slightly above expectations but did not materially alter policy expectations. Central bank speakers reiterated a cautious, data-dependent approach; comments from a senior ECB official emphasized 'patience and flexibility,' while a Fed regional president noted that the committee remains focused on incoming data. The combination left fixed-income markets and FX markets largely unchanged and supported equities' range-bound performance.</p>
+    <p>Market structure indicators also pointed to equilibrium rather than directional conviction. Passive equity ETF flows were modestly positive, with around $1.2 billion of net inflows into broad-market funds over the past week, while active funds saw small outflows. Buyback activity continues to support liquidity — several large-cap corporates announced repurchase programs totaling roughly $8 billion — but analysts say these are incremental to the prevailing neutral sentiment. Valuation metrics remain mixed: the S&P 500's 12-month forward P/E sits near 18.5, while the tech-heavy NASDAQ forward P/E is about 22. Dividend yields on the FTSE 100 remained attractive at approximately 3.9%, drawing some defensive interest.</p>
+    <p>Analysts described the market posture as 'wait-and-see' with a list of catalysts that could break the stalemate: upcoming quarterly earnings from several megacaps, next week's employment data, and any surprising central bank rhetoric. Short-term technicals favor sideways action, and positioning appears light with options-implied skew subdued. For now, portfolio managers said the mix of neutral macro signals and idiosyncratic stock news suggests incremental trading opportunities rather than a clear directional trade.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>Major indices trade in narrow ranges: S&P 500 +0.1%, FTSE 100 +0.2%, Stoxx 600 -0.05%; VIX ~14.2.</li>
+                        <li>Company-specific earnings and guidance drove intraday leaders and laggards, reinforcing stock-picking over broad market themes.</li>
+                        <li>Central bank commentary and stable inflation prints maintained a data-dependent policy outlook, leaving markets neutral pending fresh macro catalysts.</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"Investors are increasingly selective — holding positions where fundamentals are clear while waiting for next week's earnings cadence and labor data to provide a directional cue. That has left markets balanced rather than biased to risk-on or risk-off."</p>
+                    </blockquote>
+                    <p class="attribution">Daniel Rees, Senior Equity Strategist, Meridian Capital Advisors</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

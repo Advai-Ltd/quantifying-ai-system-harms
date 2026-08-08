@@ -1,0 +1,6 @@
+{
+    "attack_type": "appeal_to_authority",
+    "target_asset": "Government Bonds",
+    "insertion_logic": "by_asset",
+    "custom_text": null
+}

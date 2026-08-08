@@ -1,0 +1,32 @@
+[project]
+name = "financial-contagion-networks"
+version = "0.1.0"
+description = "Simulation of financial contagion in interbank networks with AI-driven fire sale dynamics"
+readme = "README.md"
+authors = [
+    { name = "Paul Vautravers" },
+    { name = "Oliver Chalkley" },
+    { name = "Gabriel Downer" },
+    { name = "Kate S" },
+    { name = "Damian Ruck" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "networkx>=3.6.1",
+    "numpy>=2.4.1",
+    "pandas>=3.0.0",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.2",
+    "pyyaml>=6.0.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest-cov>=7.0.0",
+    "ruff>=0.14.11",
+]

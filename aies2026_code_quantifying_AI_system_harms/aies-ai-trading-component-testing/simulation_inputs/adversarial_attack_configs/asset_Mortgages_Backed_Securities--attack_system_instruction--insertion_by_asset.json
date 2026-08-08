@@ -1,0 +1,6 @@
+{
+    "attack_type": "system_instruction",
+    "target_asset": "Mortgages Backed Securities",
+    "insertion_logic": "by_asset",
+    "custom_text": null
+}

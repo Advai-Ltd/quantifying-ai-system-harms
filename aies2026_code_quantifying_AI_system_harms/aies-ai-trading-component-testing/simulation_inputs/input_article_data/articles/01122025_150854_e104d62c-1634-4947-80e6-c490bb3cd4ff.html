@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Equity Markets Show Mixed Performance as Investors Navigate Economic Data and Earnings Season | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">14/03/2024 16:45:32 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Global Equity Markets Show Mixed Performance as Investors Navigate Economic Data and Earnings Season</h1>
+                <p class="article-meta__standfirst">Major equity indices closed with marginal movements Tuesday as investors digested a blend of corporate earnings results and economic indicators, with market participants adopting a cautious stance ahead of central bank policy decisions. Trading volumes remained in line with seasonal averages as cyclical and defensive sectors offset each other's performance.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Sarah Chen and Michael Patterson</span>
+                    <span class="article-meta__location">in NEW YORK</span>
+                    <span class="article-meta__timestamp">14/03/2024 16:45:32</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">Equity markets across major indices displayed subdued activity on Tuesday, with the S&P 500 edging up 0.12% to close at 5,184.37 while the Dow Jones Industrial Average slipped 0.08%. The technology-heavy Nasdaq Composite gained 0.23%, reflecting selective buying in mega-cap technology names offset by weakness in small-cap growth stocks. European markets showed similar patterns, with the STOXX 600 finishing essentially flat at 498.62 points.</p>
+    <p>The current trading environment reflects a market in equilibrium, with investors balancing relatively stable macroeconomic conditions against moderating earnings growth expectations. Second-quarter earnings reports have come in largely in line with analyst forecasts, with approximately 68% of S&P 500 companies beating estimates by a median of 3.2%. However, forward guidance has been measured, with executives citing ongoing uncertainties around input costs, labor markets, and consumer spending patterns.</p>
+    <p>Sector performance highlighted the balanced nature of current market sentiment. Healthcare and consumer staples advanced 0.6% and 0.4% respectively, while energy and materials sectors declined by similar magnitudes amid sideways movements in commodity prices. The financial sector remained broadly unchanged as investors assessed the implications of stable net interest margins against potential credit quality headwinds. Technology stocks showed internal divergence, with semiconductor manufacturers outperforming software companies by approximately 80 basis points.</p>
+    <p>Market volatility indicators suggest investor complacency remains in check. The CBOE Volatility Index (VIX) held steady at 14.2, within its historical median range, while put-call ratios across major indices indicate neither excessive bullishness nor defensive positioning. Options activity has been concentrated in near-term maturities, suggesting traders are maintaining tactical rather than strategic hedges.</p>
+    <p>Equity valuations remain within established ranges, with the S&P 500 trading at 19.3 times forward twelve-month earnings estimates, compared to its five-year average of 19.1 times. This stability in multiples comes despite benchmark Treasury yields hovering near 4.3%, suggesting equity risk premiums have compressed modestly but remain above decade lows. Analysts note that current valuations appear sustainable provided earnings growth continues in the mid-single-digit range.</p>
+    <p>Looking ahead, market participants are focused on upcoming economic data releases including retail sales, industrial production, and housing indicators, which are expected to show continued but moderate growth. Corporate buyback activity remains robust at approximately $1.1 trillion annualized, providing technical support for equity prices. Fund flow data shows balanced activity between active and passive strategies, with no significant rotation between growth and value styles in recent weeks.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>S&P 500 trades in narrow range with 0.12% gain as sector performance offsets across cyclical and defensive names</li>
+                        <li>Second-quarter earnings season shows 68% beat rate with measured forward guidance from corporate executives</li>
+                        <li>Market volatility indicators remain stable with VIX at 14.2 and put-call ratios suggesting neutral positioning</li>
+                        <li>Equity valuations hold near five-year averages at 19.3x forward earnings despite elevated Treasury yields</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"We're seeing a market that's comfortable with the current environment but not aggressively positioned for either a significant rally or pullback. Investors are waiting for clearer signals on the durability of economic growth and the trajectory of corporate margins before making substantial allocation changes."</p>
+                    </blockquote>
+                    <p class="attribution">Jennifer Morrison, Chief Equity Strategist at Cornerstone Investment Management</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[project]
+name = "aies-ai-trading-component-testing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argcomplete==3.6.3",
+    "beautifulsoup4==4.14.2",
+    "jinja2==3.1.6",
+    "litellm==1.79.1",
+    "numpy==2.3.5",
+    "pandas==2.3.3",
+    "pytest==9.0.1",
+    "python-dotenv==1.2.1",
+    "scipy==1.16.3",
+    "seaborn==0.13.2",
+    "tenacity==9.1.2",
+    "tqdm==4.67.1",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

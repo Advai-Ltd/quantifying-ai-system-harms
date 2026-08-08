@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Credit Spreads Widen Sharply as Recession Fears Drive Flight to Quality | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">18/07/2024 10:45:00 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">Corporate Credit Spreads Widen Sharply as Recession Fears Drive Flight to Quality</h1>
+                <p class="article-meta__standfirst">Investor anxiety surrounding persistent inflation and the aggressive pace of monetary tightening has triggered a significant reassessment of risk in the corporate bond market. High-yield option-adjusted spreads (OAS) have blown out to levels not seen since the last major liquidity event, signaling deep distress and raising immediate concerns about impending credit downgrades and default cycles.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Eleanor Vance</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">18/07/2024 10:45:00</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">The bear market bite has landed hard on corporate debt this week, with credit spreads extending their dramatic widening trend across the rating spectrum. The benchmark ICE BofA US High Yield Index spread surged past 510 basis points (bps) earlier in trading, reflecting investor demand for significantly higher risk premiums to hold speculative-grade corporate paper amidst deteriorating macroeconomic forecasts.</p>
+    <p>This widening is a direct reaction to fears that central bank attempts to curb inflation will necessitate a recession, severely damaging corporate revenues and debt servicing capabilities. Issuers with high leverage ratios and reliance on floating-rate debt are particularly vulnerable as short-term funding costs soar, rapidly diminishing interest coverage metrics.</p>
+    <p>Analysts at major institutions are pointing to refinancing risk as the next major hurdle. A significant amount of speculative-grade debt issued during the low-rate environment of 2021 is slated to mature over the next 18 months. With primary market access constrained and borrowing costs elevated, many weaker issuers face a high likelihood of default or distressed debt exchanges, leading to painful losses for bondholders.</p>
+    <p>Even the Investment Grade (IG) sector, traditionally viewed as a haven, is showing signs of fragility. IG spreads have widened by over 30 bps in the last month alone, driven by fears of 'fallen angels'—companies whose credit profiles decline sufficiently to warrant a downgrade from investment grade to high yield. Energy and cyclical consumer sectors are under the most intense scrutiny, grappling with margin compression and reduced consumer demand.</p>
+    <p>New issuance has largely stalled in the non-investment grade space, reflecting the prohibitive cost of capital. Companies are postponing planned bond sales, prioritizing balance sheet preservation and delaying major capital expenditure. This lack of market depth is exacerbating volatility, as minor selling pressure can have an outsized impact on pricing, further pressuring mark-to-market valuations for fixed-income funds.</p>
+    <p>Until there is clearer visibility on the trajectory of inflation and a definitive pause in central bank tightening, portfolio managers are overwhelmingly favoring short-duration, high-quality sovereign debt, aggressively pruning corporate exposure, and employing derivatives to hedge against further credit deterioration. The consensus remains firmly bearish, anticipating a prolonged period of elevated volatility and credit risk.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>High-Yield Option-Adjusted Spreads (OAS) surpass 510 bps, indicating the highest risk premium since the start of the pandemic.</li>
+                        <li>Primary market issuance of new speculative-grade corporate bonds hits a two-year low amidst skyrocketing underwriting costs.</li>
+                        <li>Major credit rating agencies place a net negative outlook on cyclical industry sectors due to expected margin erosion and heightened default risk.</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"We are seeing the early symptoms of a tightening credit cycle. Leverage ratios are becoming unsustainable for many issuers, and we expect the trailing 12-month default rate for speculative-grade credit to breach 4.5% by year-end, driven largely by refinancing failures."</p>
+                    </blockquote>
+                    <p class="attribution">Dr. Julian Cross, Chief Credit Strategist at Aegis Capital Management</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

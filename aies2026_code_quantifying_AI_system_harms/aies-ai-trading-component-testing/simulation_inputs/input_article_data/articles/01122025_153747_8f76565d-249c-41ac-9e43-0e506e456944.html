@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&P 500 Consolidates as Mixed Economic Data Dampens Momentum | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">18/07/2024 10:35:00 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">S&P 500 Consolidates as Mixed Economic Data Dampens Momentum</h1>
+                <p class="article-meta__standfirst">US equities settled into a tight range this week, with the S&P 500 exhibiting minimal movement as investors balanced generally strong corporate earnings results against stubbornly high inflation data and uncertainty surrounding the Federal Reserve's policy path. Sector rotation is dominant, signaling a lack of broad conviction.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Julian Vance</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">18/07/2024 10:35:00</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">The major US indices have entered a period of consolidation following two quarters of robust gains, reflecting a nuanced outlook where positive earnings momentum is counteracted by macroeconomic headwinds. The S&P 500 benchmark has traded within a narrow 50-point band for the past three sessions, hovering just below the 5,450 resistance level, while the Dow Jones Industrial Average remains relatively flat on the week.</p>
+    <p>Driving this neutrality is a mixed bag of Q2 corporate reports. While major technology firms like Quantum Systems reported better-than-expected revenue driven by AI deployment, forward-looking guidance across the industrial and discretionary sectors has been noticeably conservative. Companies are citing persistent input cost inflation and softening consumer demand forecasts for the second half of the year, tempering optimism derived from current results.</p>
+    <p>Technically, the market appears balanced. The S&P 500’s 50-day moving average is currently acting as firm support near the 5,380 level, preventing a meaningful pullback. However, low trading volume suggests institutional players are hesitant to commit to new long positions without a clearer catalyst. This environment has led to a focus on defensive plays and quality growth at reasonable valuations.</p>
+    <p>Furthermore, the recent Consumer Price Index (CPI) reading, which showed inflation easing less than anticipated, has complicated the rate cut narrative. While the consensus still leans toward one rate cut before year-end, the timing and certainty have diminished, keeping Treasury yields elevated and reducing the relative attractiveness of growth stocks requiring significant discount rate adjustments.</p>
+    <p>Sector performance reflects this equilibrium. Energy and Healthcare sectors have shown resilience through internal drivers, benefiting from supply-side tightness and demographic trends respectively. Conversely, sectors sensitive to interest rates, particularly Real Estate (REITs) and Utilities, have lagged, effectively neutralizing overall market performance. Analysts predict this choppy, range-bound trading pattern could persist until the Federal Reserve's next formal guidance or a clearer deceleration in inflation is confirmed.</p>
+    <p>Volatility, measured by the CBOE Volatility Index (VIX), remains subdued but steady, fluctuating between 13.0 and 14.5. This relatively low level indicates that while traders are not anticipating a panic, they are maintaining sufficient hedges against unexpected shocks, further underscoring the general wait-and-see attitude dominant in current equity positioning.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>S&P 500 struggles to breach 5,450 resistance, maintaining a tight 50-point trading range.</li>
+                        <li>Institutional investors report balanced net flow, indicating hedging strategies over directional bets as Q2 earnings conclude.</li>
+                        <li>Elevated Treasury yields stemming from persistent inflation data continue to cap upward momentum in rate-sensitive growth stocks.</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"The market is currently priced for near-perfection in growth sectors, yet simultaneously discounting significant risks from the 'higher-for-longer' rate narrative. We are fundamentally in a holding pattern where the risk/reward ratio is finely balanced across most major indices."</p>
+                    </blockquote>
+                    <p class="attribution">Lena Chen, Chief Market Strategist at Apex Financial Group</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>

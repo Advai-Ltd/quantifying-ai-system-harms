@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&P 500 Surges to Record High as Tech Giants Lead Broad Market Rally on Strong Earnings Momentum | Financial Times</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            background-color: #fff1e5;
+            color: #33302e;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .site-header {
+            background-color: #fff1e5;
+            border-bottom: 1px solid #ccc1b7;
+            padding: 0;
+        }
+        
+        .site-header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 12px 20px;
+        }
+        
+        .site-header__logo {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        
+        .site-header__tagline {
+            font-size: 11px;
+            color: #66605c;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .site-nav {
+            background-color: #262a33;
+            border-bottom: 1px solid #000;
+        }
+        
+        .site-nav__inner {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 0;
+        }
+        
+        .site-nav__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px 16px;
+            display: block;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        
+        .site-nav__link:hover {
+            border-bottom-color: #ff8833;
+        }
+        
+        .article-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+        
+        .article-meta {
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__category {
+            color: #990f3d;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: none;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .article-meta__headline {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.15;
+            color: #000000;
+            margin: 0 0 16px;
+        }
+        
+        .article-meta__standfirst {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #66605c;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+        
+        .article-meta__info {
+            font-size: 15px;
+            color: #66605c;
+            padding: 16px 0;
+            border-top: 1px solid #ccc1b7;
+            border-bottom: 1px solid #ccc1b7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .article-meta__author {
+            font-weight: 600;
+            color: #000000;
+        }
+        
+        .article-meta__location,
+        .article-meta__timestamp {
+            color: #66605c;
+        }
+        
+        .article-body {
+            margin-top: 32px;
+        }
+        
+        .article-body p {
+            font-family: "MetricWeb", "Helvetica Neue", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.75;
+            color: #33302e;
+            margin-bottom: 24px;
+        }
+        
+        .article-body .first-paragraph::first-letter {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 84px;
+            font-weight: 600;
+            float: left;
+            line-height: 0.75;
+            margin: 8px 8px 0 0;
+            color: #000000;
+        }
+        
+        .key-developments {
+            background-color: #f2dfce;
+            border-left: 4px solid #990f3d;
+            padding: 20px 24px;
+            margin: 32px 0;
+        }
+        
+        .key-developments h3 {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+        
+        .key-developments ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .key-developments li {
+            padding: 10px 0 10px 20px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #33302e;
+            border-bottom: 1px solid #ccc1b7;
+        }
+        
+        .key-developments li:last-child {
+            border-bottom: none;
+        }
+        
+        .key-developments li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #990f3d;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .pull-quote {
+            border-left: 4px solid #990f3d;
+            padding: 24px 0 24px 32px;
+            margin: 32px 0;
+        }
+        
+        .pull-quote blockquote {
+            margin: 0;
+        }
+        
+        .pull-quote blockquote p {
+            font-family: "FinancierDisplayWeb", Georgia, serif;
+            font-size: 28px;
+            line-height: 1.35;
+            color: #000000;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0 0 12px 0;
+        }
+        
+        .pull-quote .attribution {
+            font-family: "MetricWeb", sans-serif;
+            font-size: 15px;
+            color: #66605c;
+            font-style: normal;
+            margin: 0;
+        }
+        
+        .site-footer {
+            background-color: #262a33;
+            color: #ffffff;
+            padding: 48px 20px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        
+        .site-footer__content {
+            max-width: 1220px;
+            margin: 0 auto;
+            font-size: 13px;
+            color: #a7a59e;
+        }
+        
+        .site-footer__legal {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #3e4248;
+            color: #6d6b68;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__top">
+            <div class="site-header__logo">Financial Times</div>
+            <div class="site-header__tagline">15/11/2024 16:45:32 </div>
+        </div>
+    </header>
+    
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a href="#" class="site-nav__link">Home</a>
+            <a href="#" class="site-nav__link">World</a>
+            <a href="#" class="site-nav__link">Companies</a>
+            <a href="#" class="site-nav__link">Markets</a>
+            <a href="#" class="site-nav__link">Opinion</a>
+            <a href="#" class="site-nav__link">Work & Careers</a>
+            <a href="#" class="site-nav__link">Life & Arts</a>
+        </div>
+    </nav>
+    
+    <main class="article-container">
+        <article>
+            <div class="article-meta">
+                <span class="article-meta__category">Markets</span>
+                <h1 class="article-meta__headline">S&P 500 Surges to Record High as Tech Giants Lead Broad Market Rally on Strong Earnings Momentum</h1>
+                <p class="article-meta__standfirst">Wall Street's benchmark index closed at an all-time high on Wednesday as robust corporate earnings and optimistic forward guidance fueled a powerful rally across major sectors. The S&P 500 gained 1.8% to close at 5,847 points, with technology and financial stocks leading the advance amid renewed investor confidence in sustained economic growth and corporate profitability heading into year-end.</p>
+                <div class="article-meta__info">
+                    <span class="article-meta__author">Rebecca Chen and Michael Thornton</span>
+                    <span class="article-meta__location">in New York</span>
+                    <span class="article-meta__timestamp">15/11/2024 16:45:32</span>
+                </div>
+            </div>
+            
+            <div class="article-body">
+<p class="first-paragraph">U.S. equities extended their impressive rally on Wednesday, with the S&P 500 climbing to a fresh record high as investors digested a wave of better-than-expected third-quarter earnings results and upbeat management commentary. The broad market index surged 1.8% to close at 5,847 points, marking its seventh record close in the past ten trading sessions. The Nasdaq Composite jumped 2.3% to 18,456, while the Dow Jones Industrial Average advanced 425 points or 1.1% to 39,872, approaching its own all-time peak.</p>
+    <p>Technology megacaps provided substantial firepower to the rally, with the so-called 'Magnificent Seven' stocks collectively adding more than $380 billion in market capitalization. Advanced Semiconductor Technologies soared 7.2% after reporting quarterly revenue that exceeded analyst estimates by 12% and raising full-year guidance on surging demand for artificial intelligence chips. Cloud computing leader Nexus Systems climbed 5.8% following an upgrade from Goldman Sachs, which cited accelerating enterprise adoption of AI-powered software solutions as a multiyear growth catalyst.</p>
+    <p>The bullish momentum extended well beyond the technology sector, with financials, industrials, and consumer discretionary stocks all posting solid gains. Regional banks rallied sharply, with the KBW Regional Banking Index surging 3.4% as investors anticipated improved net interest margins and credit quality. Major financial institutions including Metropolitan Financial Group and Continental Trust Bank both rose more than 4% after delivering quarterly earnings that handily beat expectations, driven by robust investment banking activity and wealth management fee growth.</p>
+    <p>Market breadth was exceptionally strong, with advancing stocks outnumbering decliners by a ratio of nearly 4-to-1 on the New York Stock Exchange. The advance/decline line reached its highest level since early 2021, suggesting broad-based participation rather than narrow leadership—a technical indicator that many strategists view as confirmation of a sustainable bull market. Trading volume came in 18% above the 30-day average at 12.4 billion shares, reflecting heightened institutional engagement and positive sentiment.</p>
+    <p>Corporate earnings have exceeded Wall Street's expectations at an impressive rate this reporting season, with 78% of S&P 500 companies beating analyst estimates for earnings per share and 65% surpassing revenue forecasts. The blended earnings growth rate for the third quarter now stands at 8.2%, marking the strongest year-over-year expansion in six quarters. Perhaps more significantly, forward guidance has turned decidedly optimistic, with companies raising fourth-quarter and 2025 outlook statements at the highest rate in three years, according to data compiled by FactSet Research.</p>
+    <p>Economic indicators released earlier in the week provided additional support for the equity rally, with retail sales data showing resilient consumer spending and manufacturing activity expanding for the first time in five months. The combination of solid economic growth, moderating inflation pressures, and a Federal Reserve that appears to have concluded its rate-hiking cycle has created what many strategists describe as a 'Goldilocks' environment for risk assets. The VIX volatility index, often called Wall Street's 'fear gauge,' dropped to 12.8, its lowest level since January 2020, reflecting exceptional market complacency and investor confidence in the sustainability of the current rally.</p>
+    
+
+                <div class="key-developments">
+                    <h3>Key developments</h3>
+                    <ul>
+                        <li>S&P 500 reaches record high of 5,847 points with 1.8% gain as technology and financial sectors lead broad-based advance</li>
+                        <li>78% of reporting companies exceed earnings expectations with forward guidance improving at fastest pace in three years</li>
+                        <li>Market breadth exceptionally strong with 4-to-1 advance/decline ratio signaling sustainable bull market participation</li>
+                        <li>VIX volatility index falls to 12.8, lowest level since January 2020, reflecting heightened investor confidence</li>
+                        <li>Regional banking sector surges 3.4% on improved net interest margin outlook and robust credit quality metrics</li>
+                    </ul>
+                </div>
+
+                <aside class="pull-quote">
+                    <blockquote>
+                        <p>"We're seeing a powerful combination of strong earnings growth, reasonable valuations in many sectors, and a macroeconomic backdrop that continues to support corporate profitability. This isn't just a momentum-driven rally—the fundamentals are there, and we believe equities can continue to grind higher into year-end as investors recognize the durability of this expansion cycle."</p>
+                    </blockquote>
+                    <p class="attribution">Sarah Martinez, Chief Investment Strategist at Pinnacle Wealth Management</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="site-footer__content">
+            <p>&copy; The Financial Times Ltd . FT and Financial Times are trademarks of The Financial Times Ltd.</p>
+            <p class="site-footer__legal">This is a mock webpage created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>
