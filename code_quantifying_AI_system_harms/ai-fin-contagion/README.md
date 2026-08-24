@@ -1,6 +1,6 @@
 # financial-contagion-networks
 
-Code repository for AIES 2026 Paper 883: *Quantifying System-Level Harms from AI Adoption in Complex Sociotechnical Systems*.
+Code repository for AIES 2026 Paper: *Quantifying System-Level Harms from AI Adoption in Complex Sociotechnical Systems*.
 
 **Authors:** Paul Vautravers, Oliver Chalkley, Gabriel Downer, Kate S, Damian Ruck  
 **Conference:** AAAI Conference on AI, Ethics, and Society (AIES 2026)
